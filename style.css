@@ -1,0 +1,57 @@
+/* 
+    Document   : style
+    Created on : Jun 5, 2013, 5:30:30 PM
+    Author     : Rock Baaska <rockbaaska at gmail.com>
+    Description:
+        Pure Css Menu StyleSheet.
+*/
+body{
+    font-family: "Helvetica Neue" , Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+root { 
+    display: block;
+}
+.nav-menu {
+    float: left;
+    text-transform: uppercase;
+}
+.nav-menu li{
+    list-style: none;
+    padding-right: 10px;
+    background: #3498db;
+    padding: 4px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.nav-menu li:hover{
+    background: #16a085;
+}
+.nav-menu > li{
+    float: left;
+}
+.nav-menu li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+.nav-menu li a:hover{
+    display: block;
+    color: #ff0000;
+}
+.nav-menu li:hover > ul{
+    display: block;
+    color: #ff0000;
+    margin-top: 4px;
+    margin-left: -10px;
+}
+.nav-menu ul li:hover > ul{
+    margin-left: 0px;margin-top: -20px;
+}
+.nav-menu ul ul {
+    left: 100%; 
+}
+.nav-menu ul{
+    display: none;
+    position: absolute;
+    padding: 0px;
+}
